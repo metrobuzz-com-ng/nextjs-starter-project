@@ -15,10 +15,13 @@ const geti18ns = () => {
   return i18ns[getCurrentLanguage()];
 };
 
+const getEnvs = () => env;
+
 const getters = {
   getBaseUrl,
   getCurrentLanguage,
   geti18ns,
+  getEnvs,
 };
 
 export default getters;

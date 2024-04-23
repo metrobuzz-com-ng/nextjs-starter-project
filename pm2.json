@@ -1,0 +1,28 @@
+{
+  "apps": [
+    {
+      "name": "Test",
+      "script": "node_modules/next/dist/bin/next",
+      "args": "start",
+      "env": {
+        "NODE_ENV": "test"
+      }
+    },
+    {
+      "name": "Production",
+      "script": "node_modules/next/dist/bin/next",
+      "args": "start",
+      "env": {
+        "NODE_ENV": "production"
+      }
+    },
+    {
+      "name": "Development",
+      "script": "node_modules/next/dist/bin/next",
+      "args": "start",
+      "env": {
+        "NODE_ENV": "development"
+      }
+    }
+  ]
+}
