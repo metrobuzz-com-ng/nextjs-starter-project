@@ -19,6 +19,7 @@ export default function RootLayout({
   return (
     <html lang={getters.getCurrentLanguage()}>
       <body className={inter.className}>
+        <section id="portal" />
         <ModalContextProvider>
           <>{children}</>
         </ModalContextProvider>

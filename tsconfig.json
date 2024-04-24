@@ -25,7 +25,8 @@
       "@/constants": ["./src/constants"],
       "@/hooks": ["./src/hooks"],
       "@/wrappers": ["./src/wrappers"],
-      "@/modals": ["./src/modals"]
+      "@/modals": ["./src/modals"],
+      "@/components": ["./src/components"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],

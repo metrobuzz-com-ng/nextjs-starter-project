@@ -9,7 +9,6 @@ const ModalsContainer = () => {
 
   return (
     <Portal>
-      <></>
       {/** Add modals that should be rendered in the portal here */}
       <SampleModal
         onClose={() => setShowDefaultModal(false)}
