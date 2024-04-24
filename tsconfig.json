@@ -26,7 +26,8 @@
       "@/hooks": ["./src/hooks"],
       "@/wrappers": ["./src/wrappers"],
       "@/modals": ["./src/modals"],
-      "@/components": ["./src/components"]
+      "@/components": ["./src/components"],
+      "@/redux": ["./src/redux"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],

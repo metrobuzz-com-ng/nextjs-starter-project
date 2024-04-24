@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { getters } from "@/config";
 import { ModalContextProvider } from "@/wrappers";
+import { ReduxProvider } from "@/redux";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,9 +21,11 @@ export default function RootLayout({
     <html lang={getters.getCurrentLanguage()}>
       <body className={inter.className}>
         <section id="portal" />
-        <ModalContextProvider>
-          <>{children}</>
-        </ModalContextProvider>
+        <ReduxProvider>
+          <ModalContextProvider>
+            <>{children}</>
+          </ModalContextProvider>
+        </ReduxProvider>
       </body>
     </html>
   );
