@@ -8,23 +8,18 @@ const Modal = ({
   onClose = () => {},
   children,
 }: ModalBaseProps & ChildrenProps) => {
-  // useEffect(() => {
-  //   if (opened) {
-  //     document.body.classList.add("hidden-overflow");
-  //   } else {
-  //     document.body.classList.remove("hidden-overflow");
-  //   }
-
-  //   return () => {
-  //     document.body.classList.remove("hidden-overflow");
-  //   };
-  // }, [opened]);
-
   if (!opened) return <></>;
 
   return (
-    <div className="modal" onClick={onClose} role="document">
-      <div className="modal-container" onClick={(e) => e.stopPropagation()}>
+    <div
+      className="fixed z-[999] top-0 w-screen h-screen overscroll-none flex justify-center items-center backdrop-blur-sm opacity-80 bg-slate-300"
+      onClick={onClose}
+      role="document"
+    >
+      <div
+        className="bg-white p-4 w-[600px]"
+        onClick={(e) => e.stopPropagation()}
+      >
         {children}
       </div>
     </div>
