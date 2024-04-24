@@ -3,6 +3,7 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 import { useModals } from "@/wrappers";
+import Button from "react-bootstrap/Button";
 
 export default function Home() {
   const { setShowDefaultModal } = useModals();
@@ -29,13 +30,9 @@ export default function Home() {
               priority
             />
           </a>
-          <button
-            type="button"
-            className={styles.button}
-            onClick={() => setShowDefaultModal(true)}
-          >
+          <Button variant="primary" onClick={() => setShowDefaultModal(true)}>
             Open modal
-          </button>
+          </Button>
         </div>
       </div>
 
