@@ -1,7 +1,7 @@
 "use client";
 
 import { ChildrenProps, ModalBaseProps } from "@/types";
-import { Modal as MantineModal, Button } from "@mantine/core";
+import { Modal as MantineModal } from "@mantine/core";
 
 const Modal = ({
   opened,
