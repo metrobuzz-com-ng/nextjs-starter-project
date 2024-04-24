@@ -13,7 +13,7 @@ export default function Home() {
           Get started by editing&nbsp;
           <code className={styles.code}>src/app/page.tsx</code>
         </p>
-        <div className={styles.buttonContainer}>
+        <div className="flex justify-center gap-3">
           <a
             href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
             target="_blank"
@@ -31,7 +31,7 @@ export default function Home() {
           </a>
           <button
             type="button"
-            className={styles.button}
+            className="border-none rounded-md bg-slate-900 p-md text-white cursor-pointer"
             onClick={() => setShowDefaultModal(true)}
           >
             Open modal
