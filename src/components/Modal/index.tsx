@@ -1,7 +1,6 @@
 "use client";
 
 import { ChildrenProps, ModalBaseProps } from "@/types";
-import "./index.css";
 
 const Modal = ({
   opened,
