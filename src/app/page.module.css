@@ -186,6 +186,7 @@
     );
     background-clip: padding-box;
     backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
   }
 
   .description div {
@@ -227,4 +228,19 @@
   to {
     transform: rotate(0deg);
   }
+}
+
+.button {
+  border: none;
+  background-color: black;
+  border-radius: 4px;
+  padding: 4px 12px;
+  color: white;
+  cursor: pointer;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
 }

@@ -1,3 +1,5 @@
+"use client";
+
 import { LoadScriptProps } from "@/types";
 import { useEffect, useState } from "react";
 
