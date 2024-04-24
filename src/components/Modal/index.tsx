@@ -8,18 +8,6 @@ const Modal = ({
   onClose = () => {},
   children,
 }: ModalBaseProps & ChildrenProps) => {
-  // useEffect(() => {
-  //   if (opened) {
-  //     document.body.classList.add("hidden-overflow");
-  //   } else {
-  //     document.body.classList.remove("hidden-overflow");
-  //   }
-
-  //   return () => {
-  //     document.body.classList.remove("hidden-overflow");
-  //   };
-  // }, [opened]);
-
   if (!opened) return <></>;
 
   return (
