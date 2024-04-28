@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 import { getters } from "@/config";
 import { ModalContextProvider } from "@/wrappers";
 import { ReduxProvider } from "@/redux";
@@ -12,11 +13,11 @@ export const metadata: Metadata = {
   description: getters.geti18ns().ROOT.DESCRIPTION,
 };
 
-export default function RootLayout({
+const RootLayout = ({
   children,
 }: Readonly<{
   children: React.ReactNode;
-}>) {
+}>) => {
   return (
     <html lang={getters.getCurrentLanguage()}>
       <body className={inter.className}>
@@ -29,4 +30,6 @@ export default function RootLayout({
       </body>
     </html>
   );
-}
+};
+
+export default RootLayout;
