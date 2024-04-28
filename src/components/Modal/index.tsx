@@ -21,6 +21,14 @@ const Modal = ({
       </BoostrapModal.Header>
     </BoostrapModal>
   );
+
+  // return (
+  //   <div className="modal" onClick={onClose} role="document">
+  //     <div className="modal-container" onClick={(e) => e.stopPropagation()}>
+  //       {children}
+  //     </div>
+  //   </div>
+  // );
 };
 
 export default Modal;
